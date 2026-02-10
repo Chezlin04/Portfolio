@@ -1,0 +1,219 @@
+
+:root{
+    --primary: #1584C9;
+    --secondary: #FAFAFA;
+}
+.web-shell{
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/* Section Fading */
+.fade-in-sec{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in-sec.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo{
+    width: 300px;
+    height: auto;
+}
+nav{
+    text-align: center;
+    padding: 32px;
+    margin-top: 25px;
+}
+nav ul li{
+    display: inline;
+    padding: 30px;
+    font-size: 15px;
+} 
+li a{
+    color: black;
+}
+li a:hover{
+    color: var(--primary);
+    text-decoration: none;
+}
+.active{
+    color: var(--primary);
+    text-decoration: underline;
+}
+#head-btn{
+    float: right;
+    margin-top: 50px;
+}
+/* Btns */
+.prim-btn{
+    padding: 10px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+}
+.prim-btn:hover{
+    color: var(--secondary);
+    background-color: #108cda;
+    text-decoration: none;
+}
+.sec-btn{
+    padding: 10px;
+    margin-left: 10px;
+    background-color: var(--secondary);
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.sec-btn:hover{
+    color: black;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+/* Home Section */
+p{
+    line-height: 22px;
+}
+span{
+    color: var(--primary);
+}
+.socials img{
+    width: 30px;
+    height: auto;
+    margin: 5px;
+    border-radius: 8px;
+}
+#intro-img{
+    float: right;
+    box-shadow: 5px 5px 50px 10px var(--primary);
+}
+.meImg{
+    width: 60%;
+    height: auto;
+    border: 2px solid var(--primary);
+    border-radius: 60%;
+    text-align: center;
+}
+.center-text{
+    text-align: center;
+    color: var(--primary);
+    text-decoration: underline;
+}
+/* About Section */
+.prog-contain img{
+    margin: 10px;
+    width: 30px;
+    height: auto;
+}
+.prog-contain span{
+    color: black;
+    font-weight: 600;
+}
+.prog-contain .prog-bar{
+    position: relative;
+    width: 97%;
+    height: 20px;
+    border-radius: 30px;
+    background-color: var(--secondary);
+    box-shadow: 3px 4px 5px 0px grey;
+}
+.prog-contain .prog-bar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--secondary);
+    font-weight: 600;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 30px;
+    background-color: var(--primary);
+    transition: width .5s linear;
+}
+
+.skillsImg{
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+}
+
+/* Work Section */
+.work-contain{
+    margin-bottom: 20px;
+}
+.work-contain img{
+    width: 100%;
+    height: 500px;
+    border: 3px solid var(--primary);
+    border-radius: 8px;
+}
+
+/* Contact Section */
+form{
+    text-align: center;
+}
+form input{
+    width: 30%;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+form textarea{
+    width: 30%;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+::placeholder{
+    padding-left: 10px;
+}
+form button{
+    width: 10%;
+    height: auto;
+    margin: 10px;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color: black;
+    color: var(--secondary);
+    text-align: center;
+}
+footer h3{
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+#back-to-top {
+    display: none; /* Hide the button by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+#back-to-top:hover {
+    background-color: #108cda;
+}
